@@ -94,3 +94,35 @@ a:hover {
   color: #4b5563;
   margin-bottom: 10px;
 }
+
+/* 토글 버튼 */
+#theme-toggle {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+/* 다크 모드일 때 */
+body.dark {
+  background-color: #1a1a1a;
+  color: #e5e7eb;
+}
+body.dark h1 {
+  color: #ffffff;
+}
+body.dark h2 {
+  border-bottom-color: #374151;
+}
+body.dark .project {
+  background-color: #262626;
+  border-color: #374151;
+}
+body.dark .project p,
+body.dark h1 + p {
+  color: #9ca3af;
+}
