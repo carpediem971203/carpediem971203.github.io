@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <button id="theme-toggle">다크 모드</button>
   <h1>김윤주</h1>
   <p>웹 개발을 공부하고 있습니다.</p>
 
@@ -36,5 +37,14 @@
   <h2>연락처</h2>
   <p>이메일: <a href="mailto:carpediem971203@gmail.com">carpediem971203@gmail.com</a></p>
   <p><a href="https://github.com/carpediem971203">GitHub</a></p>
+  
+  <script>
+    const button = document.getElementById("theme-toggle");
+
+    button.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+    });
+  </script>
+  
 </body>
 </html>
