@@ -126,3 +126,12 @@ body.dark .project p,
 body.dark h1 + p {
   color: #9ca3af;
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 40px 16px;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+}
