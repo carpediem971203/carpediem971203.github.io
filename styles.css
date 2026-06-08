@@ -1,21 +1,74 @@
+/* 모든 요소 기본값 초기화 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: system-ui, sans-serif;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 60px 24px;
   line-height: 1.7;
-  color: #333;
+  color: #1f2937;
+  background-color: #fafafa;
 }
 
+/* 이름 */
 h1 {
-  color: #1a1a1a;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
 }
 
+/* 이름 바로 아래 한 줄 소개 */
+h1 + p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 48px;
+}
+
+/* 섹션 제목 */
 h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
   margin-top: 40px;
-  color: #2563eb;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
 }
 
+p {
+  margin-bottom: 12px;
+}
+
+/* '할 수 있는 것' 목록을 태그처럼 */
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+li {
+  background-color: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* 링크 */
 a {
-  color: #2563eb;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
